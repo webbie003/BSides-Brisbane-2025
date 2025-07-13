@@ -8,8 +8,6 @@ Bsides Brisbane 2025 again this year included a hardware badge CTF challenge, th
 <p align="center">
   <img src='./a04fzw.gif'>
 </p>
-
----
  
 ## Objective
 Exploit the device’s bootmode to reveal the hidden flag.
@@ -32,9 +30,15 @@ Exploit the device’s bootmode to reveal the hidden flag.
    - Timing is critical: this glitches the boot sequence.
    - Goal is to partially trigger debug mode while allowing normal mode to continue.
 5. If successful, the flag is printed over UART.
-
-![Exploit Output](./1a815664-0557-4a6a-9d0d-0c8fe126023a.png)
-> ✅ Flag Retrieved: flag{5E4C5476}
+<p>
+  <details>
+    <summary><b>SPOILER...! Click to reveal flag</b></summary>
+✅ <b>Flag Retrieved</b>: <i>flag{5E4C5476}</i>
+  </details>
+</p>
+<p align="center">
+  <img src='./1a815664-0557-4a6a-9d0d-0c8fe126023a.png'></br>
+</p>
 
 ## Root Cause
 This challenge exposed a **vulnerable debug path** due to:
